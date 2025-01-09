@@ -5,14 +5,47 @@
 body {
 	background-color: darkslategrey;
 	color: white;
+	font-size: 1.2em;
 }
 .center {
 	max-width: fit-content;
 	margin: 0px auto;
+}
+.supe {
+	margin-top: 100px;
+	font-size: 4em;
+	font-weight: bolder;
 }
 .crazy {
 	color: transparent;
 	background: linear-gradient(#e66465, #9198e5);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.strange {
+	display: inline-block;
+	height: 1em;
+	width: 340px;
+	color: hsl(134, 100%, 88%);
+	contain-intrinsic-height: 1em;
+	contain: inline-size style layout;
+	vertical-align: top;
+	/* animation: 2s linear infinite goe; */
+	transform-origin: 50% 100px;
+}
+.powerful {
+	display: inline-block;
+	height: 1em;
+	width: min-content;
+	color: hsl(134, 100%, 88%);
+	contain-intrinsic-height: 1em;
+	contain: inline-size style layout;
+	vertical-align: top;
+	animation: 2s linear infinite go;
+}
+
+@keyframes goe {
+	0% 		{ transform:rotate3d(1, 1, 1, 0deg); }
+	50% 	{ transform:rotate3d(1, 1, 1, 180deg); }
+	100% 	{ transform:rotate3d(1, 1, 1, 360deg); }
 }
